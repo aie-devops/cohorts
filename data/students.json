@@ -1,0 +1,43 @@
+[
+  {
+
+    "name": "Khaled Alowd",
+    "cohort": 2,
+    "photo": "https://api.dicebear.com/9.x/avataaars-neutral/svg?seed=Khaled+Alowd"
+  },
+  
+  {
+    "name": "Nasser Ahmed",
+    "cohort": 2,
+    "photo": "https://api.dicebear.com/9.x/avataaars-neutral/svg?seed=Nasser+Ahmed"
+  },
+  {
+    "name": "Husain Saleem",
+    "cohort": 2,
+    "photo": "https://api.dicebear.com/9.x/avataaars-neutral/svg?seed=Husain+Saleem"
+  },
+  {
+    "name": "Marwa Adel",
+    "cohort": 5,
+    "photo": "https://api.dicebear.com/9.x/avataaars-neutral/svg?seed=Marwa+Adel"
+  },
+  {
+    "name": "Hawra Almutawa",
+    "cohort": 2,
+    "photo": "https://api.dicebear.com/9.x/avataaars-neutral/svg?seed=Hawra+Almutawa"
+  }
+  ,
+  {
+    "name": "Sarah Rashed",
+    "cohort": 2,
+    "photo": "https://api.dicebear.com/9.x/avataaars-neutral/svg?seed=Sarah+Rashed"
+  },
+  {
+    "name": "Shay Mureed",
+    "cohort": 5,
+    "photo": "https://api.dicebear.com/9.x/avataaars-neutral/svg?seed=Shay+Mureed"
+
+  }
+]
+
+
