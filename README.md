@@ -11,13 +11,11 @@ The objectives of this exercise is for you to learn:
 - how to fetch updates from the `upstream` remote repository, and
 - how to resolve merge conflicts.
 
-## Fork the repository
+## Use this template
 
-![fork](./images/fork.png)
+![image](./images/image.png)
 
-Fork this repository on GitHub. This will create a copy on your GitHub account that you can edit.
-
-Make sure to uncheck "Copy `main` branch only" so that you fork all the branches. We want to also get the `students` branch from this repository.
+On the top right, click on the "use this template" button and select "create a new repository".
 
 ## Clone the repository
 
@@ -25,6 +23,14 @@ Now, clone your own copy to your local machine to make changes.
 
 ```sh
 git clone https://github.com/<your-github-username>/students.git
+```
+
+## Switch to a new branch
+
+You are currently in the `main` branch. You will need to create a new branch and switch to it.
+
+```sh
+git switch --create <my-new-branch>
 ```
 
 ## Add your name and details
@@ -45,17 +51,9 @@ If you have an image hosted on the web, you can add it to your profile card. Oth
 
 For instance, you can generate a random avatar based on your name [https://api.dicebear.com/9.x/avataaars-neutral/svg?seed=Your+Name](https://api.dicebear.com/9.x/avataaars-neutral/svg?seed=Your+Name)
 
-## Stage, commit, and push
-
-Stage, commit, and push your changes to your remote repository on GitHub.
-
-```sh
-git add students.json
-git commit -m "Add my name to student directory"
-git push origin main
-```
-
 ## Run the web server locally
+
+We want to check to see if the changes we have made work locally before pushing them to the remote repository.
 
 Use a port number like `8080`.
 
@@ -63,35 +61,21 @@ Use a port number like `8080`.
 python3 -m http.server [port]
 ```
 
+## Stage, commit, and push
+
+Stage, commit, and push your changes to your remote repository on GitHub.
+
+```sh
+git add students.json
+git commit -m "Add my name to student directory"
+git push origin <my-new-branch>
+```
+
 ## Create a pull request
 
-Create a pull request on GitHub to merge your changes to the upstream repository. Learn more about [creating pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
+Create a pull request on GitHub to merge your changes to your `main` branch.
 
-## Get updates from the `upstream` remote repository
-
-First we add the `upstream` remote repository to our local repository. This is so that we can pull updates from the upstream repository.
-
-```sh
-git remote add upstream https://github.com/aie-devops/cohorts.git
-```
-
-Check your remote repositories. You should see both `origin` and `upstream` remote repositories.
-
-```sh
-git remote -v
-```
-
-Next, we want to fetch the updates.
-
-```sh
-git fetch upstream
-```
-
-We pull the changes from the `students` branch of the upstream repository.
-
-```sh
-git pull upstream students --rebase
-```
+Learn more about [creating pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
 
 ## Resolve merge conflicts
 
