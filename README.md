@@ -11,13 +11,15 @@ The objectives of this exercise is for you to learn:
 - how to fetch updates from the `upstream` remote repository, and
 - how to resolve merge conflicts.
 
-## Use this template
+## Part 1: Add your changes
+
+### Use this template
 
 ![image](./images/image.png)
 
 On the top right, click on the "use this template" button and select "create a new repository".
 
-## Clone the repository
+### Clone the repository
 
 Now, clone your own copy to your local machine to make changes.
 
@@ -25,7 +27,7 @@ Now, clone your own copy to your local machine to make changes.
 git clone https://github.com/<your-github-username>/students.git
 ```
 
-## Switch to a new branch
+### Switch to a new branch
 
 You are currently in the `main` branch. You will need to create a new branch and switch to it.
 
@@ -33,7 +35,21 @@ You are currently in the `main` branch. You will need to create a new branch and
 git switch --create <my-new-branch>
 ```
 
-## Add your name and details
+In our case, we will create these two branches.
+
+```sh
+git checkout main
+git switch --create feature-part-2
+```
+
+```sh
+git checkout main
+git switch --create feature-part-1
+```
+
+Continue working on the `feature-part-1`.
+
+### Add your name and details
 
 Edit the `students.json` file in the `data` folder and add your name and details.
 
@@ -45,13 +61,13 @@ Edit the `students.json` file in the `data` folder and add your name and details
 }
 ```
 
-## Add an image to your profile card
+### Add an image to your profile card
 
 If you have an image hosted on the web, you can add it to your profile card. Otherwise a default image will be used. You can also generate your own avatar with [DiceBear](https://www.dicebear.com/).
 
 For instance, you can generate a random avatar based on your name [https://api.dicebear.com/9.x/avataaars-neutral/svg?seed=Your+Name](https://api.dicebear.com/9.x/avataaars-neutral/svg?seed=Your+Name)
 
-## Run the web server locally
+### Run the web server locally
 
 We want to check to see if the changes we have made work locally before pushing them to the remote repository.
 
@@ -61,7 +77,7 @@ Use a port number like `8080`.
 python3 -m http.server [port]
 ```
 
-## Stage, commit, and push
+### Stage, commit, and push
 
 Stage, commit, and push your changes to your remote repository on GitHub.
 
@@ -71,11 +87,31 @@ git commit -m "Add my name to student directory"
 git push origin <my-new-branch>
 ```
 
-## Create a pull request
+### Create a pull request
 
 Create a pull request on GitHub to merge your changes to your `main` branch.
 
 Learn more about [creating pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
+
+## Part 2: Resolve merge conflicts
+
+Notice that there were no conflicts in the previous part of the exercise. We will now create a merge conflict and try to resolve it.
+
+### Switch to the `feature-part-2` branch
+
+Recall that we had created another branch called `feature-part-2`. Now let's switch to that branch.
+
+```sh
+git switch feature-part-2
+```
+
+### Make some additional changes
+
+Add a dummy name in the `students.json` file. You can add any name, except your own name.
+
+### Make a pull request
+
+Return to GitHub and try to make a pull request.
 
 ## Resolve merge conflicts
 
