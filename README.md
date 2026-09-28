@@ -6,7 +6,6 @@
 
 The objectives of this exercise is for you to learn:
 
-- the difference between forking and cloning a repository,
 - stage, commit, and push your changes to your `origin` remote repository,
 - create a pull request to merge your changes to the upstream repository,
 - how to fetch updates from the `upstream` remote repository, and
@@ -25,7 +24,7 @@ Make sure to uncheck "Copy `main` branch only" so that you fork all the branches
 Now, clone your own copy to your local machine to make changes.
 
 ```sh
-git clone https://github.com/tamkeen-cloud-engineering/students.git
+git clone https://github.com/<your-github-username>/students.git
 ```
 
 ## Add your name and details
@@ -45,8 +44,6 @@ Edit the `students.json` file in the `data` folder and add your name and details
 If you have an image hosted on the web, you can add it to your profile card. Otherwise a default image will be used. You can also generate your own avatar with [DiceBear](https://www.dicebear.com/).
 
 For instance, you can generate a random avatar based on your name [https://api.dicebear.com/9.x/avataaars-neutral/svg?seed=Your+Name](https://api.dicebear.com/9.x/avataaars-neutral/svg?seed=Your+Name)
-
-![example](./images/example.png)
 
 ## Stage, commit, and push
 
