@@ -34,9 +34,9 @@ Edit the `students.json` file in the `data` folder and add your name and details
 
 ```json
 {
-  "name": "Your Name Here",
-  "cohort": 2,
-  "photo": "https://your-photo-here.com"
+  "name": "Your Name",
+  "cohort": 1,
+  "photo": "https://api.dicebear.com/9.x/avataaars-neutral/svg?seed=Your-Name"
 }
 ```
 
@@ -44,7 +44,7 @@ Edit the `students.json` file in the `data` folder and add your name and details
 
 If you have an image hosted on the web, you can add it to your profile card. Otherwise a default image will be used. You can also generate your own avatar with [DiceBear](https://www.dicebear.com/).
 
-For instance, you can generate a random avatar based on your name [https://api.dicebear.com/9.x/avataaars-neutral/svg?seed=Your+Name+Here](https://api.dicebear.com/9.x/avataaars-neutral/svg?seed=Your+Name+Here)
+For instance, you can generate a random avatar based on your name [https://api.dicebear.com/9.x/avataaars-neutral/svg?seed=Your+Name](https://api.dicebear.com/9.x/avataaars-neutral/svg?seed=Your+Name)
 
 ![example](./images/example.png)
 
@@ -58,6 +58,14 @@ git commit -m "Add my name to student directory"
 git push origin main
 ```
 
+## Run the web server locally
+
+Use a port number like `8080`.
+
+```sh
+python3 -m http.server [port]
+```
+
 ## Create a pull request
 
 Create a pull request on GitHub to merge your changes to the upstream repository. Learn more about [creating pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
@@ -67,7 +75,7 @@ Create a pull request on GitHub to merge your changes to the upstream repository
 First we add the `upstream` remote repository to our local repository. This is so that we can pull updates from the upstream repository.
 
 ```sh
-git remote add upstream https://github.com/tamkeen-cloud-engineering/students.git
+git remote add upstream https://github.com/aie-devops/cohorts.git
 ```
 
 Check your remote repositories. You should see both `origin` and `upstream` remote repositories.
